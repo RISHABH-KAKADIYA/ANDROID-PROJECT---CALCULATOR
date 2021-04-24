@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".splash">
+
+    <TextView
+        android:layout_width="235dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="(Rishabh kakadiya)"
+        android:textColor="#448AFF"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:padding="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="350dp"
+        android:src="@drawable/ic_launcher"/>
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Calculator and converter"
+        android:layout_marginBottom="280dp"
+        android:textColor="#448AFF"
+        android:layout_marginLeft="170dp"
+        android:textSize="20dp"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+
+        android:layout_width="235dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="-Develop By"
+        android:layout_marginBottom="70dp"
+        android:textColor="#448AFF"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic" />
+
+
+
+    <TextView
+        android:layout_width="235dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="RK DEVELOPER"
+        android:layout_marginBottom="45dp"
+        android:textColor="#448AFF"
+        android:textSize="34dp"
+        android:textStyle="normal|bold|italic" />
+
+</RelativeLayout>

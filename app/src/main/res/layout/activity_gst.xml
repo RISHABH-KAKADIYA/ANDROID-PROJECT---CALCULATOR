@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".gst">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="GST CONVERTER"
+        android:background="#050507"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#2D9EF8"
+        android:textSize="43dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEF1"
+        android:weightSum="2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_weight="0.50"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="total amount : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#041EA8" />
+
+        <EditText
+            android:id="@+id/t1"
+            android:layout_width="228dp"
+            android:inputType="numberDecimal"
+            android:textColor="#818DCD"
+            android:hint="enter total amount"
+            android:layout_height="wrap_content"
+            android:ems="15" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#EEEEF1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_weight="0.50"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="gst rate : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#041EA8" />
+
+        <Spinner
+            android:id="@+id/spi1"
+            android:layout_width="300dp"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:padding="15dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEF1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight=".5"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/te1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Net amount is:  "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#041EA8"
+            tools:ignore="InvalidId" />
+
+        <EditText
+            android:id="@+id/t2"
+            android:layout_width="228dp"
+            android:inputType="numberDecimal"
+            android:textColor="#818DCD"
+            android:hint="your answer display here"
+            android:layout_height="wrap_content"
+            android:ems="15" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width= "180dp"
+            android:layout_height="wrap_content"
+            android:text="calculate" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="50dp">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="back"
+            android:textStyle="bold"
+            android:onClick="ButtonClick"
+            android:layout_margin="5dp"
+            android:textColor="#058EFB"
+            android:textSize="35dp"
+            android:background="@drawable/keyboard_btn"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

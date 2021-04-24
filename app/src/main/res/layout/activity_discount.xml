@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".discount">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="DISCOUNT CALCULATOR"
+        android:background="#050507"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#2D9EF8"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEF1"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_weight="0.50"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="total amount : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#041EA8" />
+
+        <EditText
+            android:id="@+id/t1"
+            android:layout_width="228dp"
+            android:inputType="numberDecimal"
+            android:hint="enter total amount"
+            android:textColor="#475393"
+            android:layout_height="wrap_content"
+            android:ems="15" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEF1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_weight="0.50"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="discount rate : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#041EA8" />
+
+        <EditText
+        android:id="@+id/t2"
+        android:layout_width="228dp"
+        android:hint="enter discount"
+        android:inputType="numberDecimal"
+        android:textColor="#475393"
+        android:layout_height="wrap_content"
+        android:ems="15" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEF1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_weight=".5"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="discount is:  "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#041EA8"
+            tools:ignore="InvalidId" />
+
+        <EditText
+            android:id="@+id/t3"
+            android:layout_width="228dp"
+            android:inputType="numberDecimal"
+            android:textColor="#475393"
+            android:hint="your discount display here"
+            android:layout_height="wrap_content"
+            android:ems="15" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEF1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_weight=".5"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Net amount is:  "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#041EA8"
+            tools:ignore="InvalidId" />
+
+        <EditText
+            android:id="@+id/t4"
+            android:layout_width="228dp"
+            android:inputType="numberDecimal"
+            android:textColor="#475393"
+            android:hint="net amount is display here"
+            android:layout_height="wrap_content"
+            android:ems="15" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:paddingHorizontal="20dp"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width= "180dp"
+            android:onClick="discountcalc"
+            android:layout_height="wrap_content"
+            android:text="calculate discount" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="60dp">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="back"
+            android:textStyle="bold"
+            android:onClick="ButtonClick"
+            android:layout_margin="5dp"
+            android:textColor="#058EFB"
+            android:textSize="35dp"
+            android:background="@drawable/keyboard_btn"/>
+
+    </LinearLayout>
+</LinearLayout>

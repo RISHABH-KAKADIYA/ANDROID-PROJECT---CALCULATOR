@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:weightSum="1.8"
+    tools:context=".age">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:text="AGE           CONVERTER"
+        android:background="#050507"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#2D9EF8"
+        android:textSize="43dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEF1"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_weight="0.50"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="birth year : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#041EA8" />
+
+        <EditText
+            android:id="@+id/y1"
+            android:layout_width="228dp"
+            android:inputType="numberDecimal"
+            android:hint="Enter your birth year"
+            android:layout_height="wrap_content"
+            android:ems="15" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEF1"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_weight="0.50"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="119dp"
+            android:text="calculating age!!! "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#041EA8" />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:padding="15dp"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width= "180dp"
+            android:layout_height="wrap_content"
+            android:text="calculate age"
+            android:onClick="calcAge"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="80dp">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="back"
+            android:textStyle="bold"
+            android:onClick="ButtonClick"
+            android:layout_margin="5dp"
+            android:textColor="#058EFB"
+            android:textSize="35dp"
+            android:background="@drawable/keyboard_btn"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

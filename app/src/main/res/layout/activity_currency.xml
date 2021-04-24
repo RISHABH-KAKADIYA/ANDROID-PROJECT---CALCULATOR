@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".currency">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="CURRENCY CONVERTER"
+        android:textColor="#2D9EF8"
+        android:textStyle="bold"
+        android:background="#000000"
+        android:textAlignment="center"
+        android:textSize="35dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="#EEEEF1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the Amount : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#041EA8" />
+
+        <EditText
+            android:id="@+id/t1"
+            android:layout_width="228dp"
+            android:hint="Enter amount here"
+            android:inputType="numberDecimal"
+            android:layout_height="wrap_content"
+            android:ems="15" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#EEEEF1"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="from : "
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#3A50CD"
+            />
+
+        <Spinner
+            android:id="@+id/spi1"
+            android:layout_width="300dp"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:padding="15dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:background="#EEEEF1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/to"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#0921A3"/>
+
+        <Spinner
+            android:id="@+id/spi2"
+            android:layout_width="340dp"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:padding="15dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="convert"
+            android:textColor="#000000"
+            android:textSize="22dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="30dp">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="back"
+            android:textStyle="bold"
+            android:onClick="ButtonClick"
+            android:layout_margin="5dp"
+            android:textColor="#058EFB"
+            android:textSize="35dp"
+            android:background="@drawable/keyboard_btn"/>
+
+
+    </LinearLayout>
+</LinearLayout>
